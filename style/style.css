@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+/* Title */
+#title {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Underline */
+#underline {
+    width: 90%;
+    height: 1px;
+    background: #ffffff;
+    margin: 0 auto;
+}
