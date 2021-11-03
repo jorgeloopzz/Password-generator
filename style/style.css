@@ -1,11 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');   /* Ceviche One */
-/* @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   Zen Kaku Gothic Antique */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
 
 body {
     background-color: rgb(34, 34, 34);
-    place-items: center;
 }
+
+
+/* Header */
 
 /* Title */
 h1 {
@@ -22,14 +24,66 @@ h1 {
     margin: 0 auto;
 }
 
-/* Buttons */
-#buttons {
-    margin: 0 auto;
+
+/* Buttons and password field */
+#downHeader {
+    margin-top: 2em; /* Make a space between header and #downheader */
+    /* Center the items */
+    display: grid;
+    place-items: center;
 }
 
 .button {
-    color: #ffffff;
-    background-color: aqua;
+    font-size: 2em;
     border: none;
-    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Left button */
+#generatePwd {
+    background-color: #48ff00;
+}
+
+#copyPwd {
+    background-color: #272727;
+}
+
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 800ms;
+    width: max-content; /* To adjust span width */
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5em;
+    font-style: italic;
+    position: absolute; /* Position the tooltip */
+}
+
+#leftTooltip {
+    /* To center text */
+    top: -10px;
+    right: 105%;    
+}
+
+/* Tooltip style at hover */
+.tooltip:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Password generated */
+h2 {
+    color: #ffffff;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-size: 3em;
 }
