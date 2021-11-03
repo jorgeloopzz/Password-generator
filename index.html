@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="img/padlock.png">  <!-- Icon of the page -->
+    <link rel="shortcut icon" type="image/png" href="img/padlock.png">  <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/cd7a3a8748.js" crossorigin="anonymous"></script>   <!-- Icons -->
     <title>Password Manager</title>
     <!-- CSS code -->
     <link rel = "stylesheet" href = "style/style.css"> 
@@ -15,6 +16,7 @@
 <body>
 
     <main>
+
         <header>
             <h1>
                 Password Manager
@@ -22,6 +24,17 @@
 
             <div id="underline"></div>
         </header>
+
+        <div id="buttons">
+            <button class="button" id="addPwd">
+                <i class="fas fa-plus"></i>
+            </button>
+
+            <button class="button" id="copyPwd">
+                <i class="far fa-copy"></i>
+            </button>
+        </div>
+
     </main>
 </body>
 

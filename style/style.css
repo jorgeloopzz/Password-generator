@@ -1,9 +1,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');   /* Ceviche One */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
+/* @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   Zen Kaku Gothic Antique */
 
 body {
     background-color: rgb(34, 34, 34);
+    place-items: center;
 }
 
 /* Title */
@@ -18,5 +19,17 @@ h1 {
     width: 90%;
     height: 1px;
     background: #ffffff;
+    margin: 0 auto;
+}
+
+/* Buttons */
+#buttons {
+    margin: 0 auto;
+}
+
+.button {
+    color: #ffffff;
+    background-color: aqua;
+    border: none;
     margin: 0 auto;
 }
