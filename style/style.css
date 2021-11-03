@@ -1,11 +1,16 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');   /* Ceviche One */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
+
 body {
     background-color: rgb(34, 34, 34);
 }
 
 /* Title */
-#title {
+h1 {
     text-align: center;
     color: #ffffff;
+    font-family: 'Ceviche One', cursive;
 }
 
 /* Underline */
