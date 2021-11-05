@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     color: #ffffff;
     font-family: 'Ceviche One', cursive;
+    font-size: 3em;
 }
 
 /* Underline */
@@ -46,6 +47,7 @@ h1 {
     background-color: #48ff00;
 }
 
+/* Right button */
 #copyPwd {
     background-color: #272727;
 }
@@ -85,5 +87,14 @@ span {
 h2 {
     color: #ffffff;
     font-family: 'Zen Kaku Gothic Antique';
-    font-size: 3em;
+    font-size: 2em;
+}
+
+
+/* Error style */
+h3 {
+    color: #e00000;
+    display: inline;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-style: oblique;
 }
