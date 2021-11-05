@@ -39,7 +39,7 @@ h1 {
 }
 
 .button {
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -134,4 +134,17 @@ table, td {
 
 th, td {
     padding: 1em 0; 
+}
+
+/* Buttons td */
+.btnTd {
+    width: 10%;
+}
+
+#editBtn {
+    background-color: #025bce;
+}
+
+#removeBtn {
+    background-color: #af0000;
 }
