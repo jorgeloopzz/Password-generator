@@ -128,6 +128,7 @@ input {
 
 /* Password table */
 table, td {
+    color: #ffffff;
     text-align: center;
     border-top: solid #ffffff 1px;
 }
