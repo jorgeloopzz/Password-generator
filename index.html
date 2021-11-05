@@ -69,33 +69,60 @@
                 You must generate a password
             </h3>
 
+            
         </div>
-
-
+        
+        
         <!-- Inputs -->
         <div id="inputs">
             <!-- Session input -->
             <input
-                type="text"
-                id="sessionInput"
-                placeholder="Session"
+            type="text"
+            id="sessionInput"
+            placeholder="Session: Github"
             >
-
+            
             <!-- Password input -->
             <input
-                type="text"
-                id="pwdInput"
-                placeholder="Password"
+            type="text"
+            id="pwdInput"
+            placeholder="Password: Uterino123"
             >
-            <button class="button" id="addBtn"> Add </button>
-        </div>
 
+            <button class="button" id="addBtn"> Add </button>
+
+            <!-- Errors -->
+            <h3 id="sessionError">
+                <i class="fas fa-exclamation-circle"></i>
+                Session input empty
+            </h3>
+    
+            <h3 id="pwdError">
+                <i class="fas fa-exclamation-circle"></i>
+                Password input empty
+            </h3>
+
+            <h3 id="">
+                <i class="fas fa-exclamation-circle"></i>
+                Inputs are empty
+            </h3>
+        </div>
+        
         <!-- Passwords table -->
-        <table>
-            <tr>
-                <th> Session </th>
-                <th> Password </th>
-            </tr>
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th> Session </th>
+                    <th> Password </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> Github </td>
+                    <td> kjbdksabfi </td>
+                </tr>
+            </tbody>
         </table>
 
 
