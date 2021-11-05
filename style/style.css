@@ -88,6 +88,7 @@ h2 {
     color: #ffffff;
     font-family: 'Zen Kaku Gothic Antique';
     font-size: 2em;
+    display: none;
 }
 
 
@@ -97,4 +98,5 @@ h3 {
     display: inline;
     font-family: 'Zen Kaku Gothic Antique';
     font-style: oblique;
+    display: none;
 }
