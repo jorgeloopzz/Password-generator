@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
 
 body {
-    background-color: rgb(34, 34, 34);
+    margin: 0;
+    background-color: #222222;
+}
+
+main {
+    margin: 0 5%;
 }
 
 
@@ -19,7 +24,6 @@ h1 {
 
 /* Underline */
 #underline {
-    width: 90%;
     height: 1px;
     background: #ffffff;
     margin: 0 auto;
@@ -35,7 +39,8 @@ h1 {
 }
 
 .button {
-    font-size: 2em;
+    font-size: 1em;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -49,7 +54,7 @@ h1 {
 
 /* Right button */
 #copyPwd {
-    background-color: #272727;
+    background-color: #5b5b5b;
 }
 
 
@@ -91,12 +96,37 @@ h2 {
     display: none;
 }
 
-
 /* Error style */
 h3 {
     color: #e00000;
-    display: inline;
     font-family: 'Zen Kaku Gothic Antique';
     font-style: oblique;
     display: none;
+}
+
+
+/* Inputs */
+#inputs {
+    margin-top: 2em;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.1fr 0.2fr 0fr;
+}
+
+/* Add button */
+#addBtn {
+    background-color: #025bce;
+}
+
+input {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Password table */
+table {
+    border: dotted;
+    width: 50%;
 }
