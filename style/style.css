@@ -19,7 +19,7 @@ h1 {
     text-align: center;
     color: #ffffff;
     font-family: 'Ceviche One', cursive;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 /* Underline */
@@ -39,8 +39,8 @@ h1 {
 }
 
 .button {
-    font-size: 1em;
-    padding: 10px 20px;
+    font-size: 2em;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -107,15 +107,10 @@ h3 {
 
 /* Inputs */
 #inputs {
-    margin-top: 2em;
+    margin: 2em 0;
     display: grid;
     place-items: center;
-    grid-template-columns: 0.1fr 0.2fr 0fr;
-}
-
-/* Add button */
-#addBtn {
-    background-color: #025bce;
+    grid-template-columns: 0fr 0.2fr 0fr 0.2fr 0.2fr 0.2fr;
 }
 
 input {
@@ -125,8 +120,18 @@ input {
     border-radius: 5px;
 }
 
+/* Add button */
+#addBtn {
+    background-color: #025bce;
+}
+
+
 /* Password table */
-table {
-    border: dotted;
-    width: 50%;
+table, td {
+    text-align: center;
+    border-top: solid #ffffff 1px;
+}
+
+th, td {
+    padding: 1em 0; 
 }
