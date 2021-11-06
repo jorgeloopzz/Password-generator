@@ -52,6 +52,10 @@ h1 {
     background-color: #48ff00;
 }
 
+#generatePwd:active {
+    background-color: #299100;
+}
+
 /* Right button */
 #copyPwd {
     background-color: #5b5b5b;
@@ -121,8 +125,12 @@ input {
 }
 
 /* Add button */
-#addBtn {
+#addBtn, #editBtn {
     background-color: #025bce;
+}
+
+#addBtn:active, #editBtn:active {
+    background-color: #2382ff;
 }
 
 
@@ -142,10 +150,10 @@ th, td {
     width: 10%;
 }
 
-#editBtn {
-    background-color: #025bce;
+#removeBtn {
+    background-color: #ff0d0d;
 }
 
-#removeBtn {
+#removeBtn:active {
     background-color: #af0000;
 }
