@@ -17,7 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
             pwd += array[letter]
             pwdField.innerHTML = pwd
         }
+        return pwdField
     }
-    generatePassword(letters)
-    
+
+    // Call the function when click the button
+    generateBtn.addEventListener('click', () => {
+        if (pwdField.style.display === "none" || pwdField.style.display === "") {
+            generatePassword(letters)
+            pwdField.style.display = "grid"
+        }
+    })
 })
