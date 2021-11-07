@@ -11,7 +11,7 @@
     <link rel = "stylesheet" href = "style/style.css"> 
     <link rel = "stylesheet" href = "style/responsive.css" />
     <!-- JS code -->
-    <script src="js/generatePwd.js"></script>
+    <script src="js/generateCopyPwd.js"></script>
 </head>
 
 <body>
@@ -24,91 +24,55 @@
             <h1>
                 Password Manager
             </h1>
-    
+            
         </header>
         
         <div id="downHeader">
+            
+            <button id="generatePwd" class="button">
+                Generate Password
+            </button>
 
-            <!-- Buttons -->
-            <div id="content">
-
-                <div class="tooltip">
-
-                    <button class="button" id="generatePwd">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                    
-                    <span id="leftTooltip"> 
-                        <strong>
-                            Generate  <br> password
-                        </strong> 
-                    </span>
-
-                </div>
-
-                <div class="tooltip">
-
-                    <button class="button" id="copyPwd">
-                        <i class="fas fa-copy"></i>
-                    </button>
-                    
-                    <span id="rightTooltip">
-                        <strong>
-                            Copy it
-                        </strong> 
-                    </span>
-
-                </div>
-
+            <!-- Inputs -->
+            <div id="inputs">
+                <!-- Session input -->
+                <input
+                type="text"
+                id="sessionInput"
+                placeholder="Session: Github"
+                >
+                
+                <!-- Password input -->
+                <input
+                type="text"
+                id="pwdInput"
+                placeholder="Password: Uterino123"
+                >
+    
+                <button class="button" id="addBtn"> Add </button>
             </div>
-            
-            <!-- Password generated -->
-            <h2 id="pwdField"></h2>
-
-            <!-- Error -->
-            <h3>
-                <i class="fas fa-exclamation-circle"></i>
-                You must generate a password
-            </h3>
-
-            
-        </div>
-        
-        
-        <!-- Inputs -->
-        <div id="inputs">
-            <!-- Session input -->
-            <input
-            type="text"
-            id="sessionInput"
-            placeholder="Session: Github"
-            >
-            
-            <!-- Password input -->
-            <input
-            type="text"
-            id="pwdInput"
-            placeholder="Password: Uterino123"
-            >
-
-            <button class="button" id="addBtn"> Add </button>
 
             <!-- Errors -->
-            <h3 id="sessionError">
-                <i class="fas fa-exclamation-circle"></i>
-                Session input empty
-            </h3>
+            <div id="errors">
+                <h3 id="sessionError">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Session input empty
+                </h3>
+        
+                <h3 id="pwdError">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Password input empty
+                </h3>
     
-            <h3 id="pwdError">
-                <i class="fas fa-exclamation-circle"></i>
-                Password input empty
-            </h3>
-
-            <h3 id="">
-                <i class="fas fa-exclamation-circle"></i>
-                Inputs are empty
-            </h3>
+                <h3 id="">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Inputs are empty
+                </h3>
+            </div>
+          
         </div>
+        
+        
         
         <!-- Passwords table -->
         <table style="width: 100%;">
