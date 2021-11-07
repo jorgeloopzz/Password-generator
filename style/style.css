@@ -12,8 +12,6 @@ main {
 }
 
 
-/* Header */
-
 /* Title */
 h1 {
     text-align: center;
@@ -22,15 +20,8 @@ h1 {
     font-size: 4em;
 }
 
-/* Underline */
-#underline {
-    height: 1px;
-    background: #ffffff;
-    margin: 0 auto;
-}
 
-
-/* Buttons and password field */
+/* Buttons style */
 #downHeader {
     margin-top: 2em; /* Make a space between header and #downheader */
     /* Center the items */
@@ -47,13 +38,13 @@ h1 {
     color: #ffffff;
 }
 
-/* Left button */
+/* Generate password button */
 #generatePwd {
-    background-color: #48ff00;
+    background-color: #2fa800;
 }
 
 #generatePwd:active {
-    background-color: #299100;
+    background-color: #42e601;
 }
 
 
@@ -82,7 +73,7 @@ input {
     margin-left: 1em;
 }
 
-/* Add button */
+/* Add and edit button */
 #addBtn, #editBtn {
     background-color: #025bce;
 }
