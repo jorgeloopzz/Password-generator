@@ -56,49 +56,6 @@ h1 {
     background-color: #299100;
 }
 
-/* Right button */
-#copyPwd {
-    background-color: #5b5b5b;
-}
-
-
-/* Tooltips */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-span {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 800ms;
-    width: max-content; /* To adjust span width */
-    text-align: center;
-    color: #ffffff;
-    padding: 0.5em;
-    font-style: italic;
-    position: absolute; /* Position the tooltip */
-}
-
-#leftTooltip {
-    /* To center text */
-    top: -10px;
-    right: 105%;    
-}
-
-/* Tooltip style at hover */
-.tooltip:hover span {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* Password generated */
-h2 {
-    color: #ffffff;
-    font-family: 'Zen Kaku Gothic Antique';
-    font-size: 2em;
-    display: none;
-}
 
 /* Error style */
 h3 {
@@ -114,7 +71,7 @@ h3 {
     margin: 2em 0;
     display: grid;
     place-items: center;
-    grid-template-columns: 0fr 0.2fr 0fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
 }
 
 input {
@@ -122,6 +79,7 @@ input {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    margin-left: 1em;
 }
 
 /* Add button */
