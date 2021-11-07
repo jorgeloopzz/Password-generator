@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //Function to generate the password
     function generatePassword(array) {
         for (let i = 0; i < 20; i++) {
-            let letter = Math.floor(Math.random() * 70)
+            let letter = Math.floor(Math.random() * characters.length)
             pwd += array[letter]
             pwdField.innerHTML = pwd
         }
