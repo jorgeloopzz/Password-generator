@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inputs information
     const session = document.getElementById("sessionInput");    // Session
     const password = document.getElementById("pwdInput"); // Password
+    const sessionTd = document.getElementById("try1");
+    const passwordTd = document.getElementById("try2");
 
     //  Add the information
     addBtn.addEventListener('click', () => {
-        console.log(session.value, password.value)
+        sessionTd.innerHTML = session.value;
+        passwordTd.innerHTML = password.value;
     })
 })
