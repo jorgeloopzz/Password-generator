@@ -10,18 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //  Add the information
     addBtn.addEventListener('click', () => {
+        // Errors
         for (let i = 0; i < errors.length; i++) {
-            errors[i].style.display = "none"
+            errors[i].style.display = "none"  // Loop through every sentence to keep them in display none
             if (session.value == "" & password.value == "") {
-                errors[2].style.display = "inline"
+                errors[2].style.display = "inline"  // Display inline for showing the sentence and the icon in horizontal
             } else if (password.value == "") {
                 errors[1].style.display = "inline"
             } else if (session.value == "") {
                 errors[0].style.display = "inline"
+            } else {
+                sessionTd.innerHTML = session.value;
+                passwordTd.innerHTML = password.value;
             }
         }
-        sessionTd.innerHTML = session.value;
-        passwordTd.innerHTML = password.value;
     })
 
 })
