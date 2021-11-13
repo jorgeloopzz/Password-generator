@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //  Add the information
     addBtn.addEventListener('click', () => {
-        if (session.value == "" & password.value == "") {
-            errors[2].style.display = "inline"
-        } else if (password.value == "") {
-            errors[1].style.display = "inline"
-        } else if (session.value == "") {
-            errors[0].style.display = "inline"
+        for (let i = 0; i < errors.length; i++) {
+            errors[i].style.display = "none"
+            if (session.value == "" & password.value == "") {
+                errors[2].style.display = "inline"
+            } else if (password.value == "") {
+                errors[1].style.display = "inline"
+            } else if (session.value == "") {
+                errors[0].style.display = "inline"
+            }
         }
         sessionTd.innerHTML = session.value;
         passwordTd.innerHTML = password.value;
