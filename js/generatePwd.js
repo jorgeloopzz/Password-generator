@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateBtn = document.getElementById("generatePwd"); //Generate password button
     const pwdField = document.getElementById("pwdInput");   // Field where to put the password
     const pwdLength = 20;   //  Length of the password
-    let  pwd = "";  // To add the characters generated
     //  Characters to put in the password
     const characters = [
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
@@ -15,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePassword(array) {
         for (let i = 0; i < pwdLength; i++) {
             let letter = Math.floor(Math.random() * characters.length)
-            pwd += array[letter]
-            pwdField.value = pwd;
+            pwdField.value += array[letter]
         }
         return pwdField
     }
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (pwdField.value == "") {
             generatePassword(characters)
         } else {
-            pwd = ""
+            pwdField.value = ""
             generatePassword(characters)
         }
     })
