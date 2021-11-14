@@ -1,6 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');   /* Ceviche One */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');  /* Libre Baskerville */
 
 body {
     margin: 0;
@@ -29,6 +30,7 @@ h1 {
 }
 
 .button {
+    font-family: 'Libre Baskerville', serif;
     font-size: 1.7em;
     padding: 5px 10px;
     border: none;
