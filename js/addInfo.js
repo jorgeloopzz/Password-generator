@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addBtn.addEventListener('click', () => {
         // Function to create the table
         function createTable() {
-            const tbody = table.getElementsByTagName('tbody')[0]  // Put a 0 to select the tbody element and not the object
+            const tbody = table.getElementsByTagName('tbody')[0]  // Put a [0] to select the tbody element and not the object
             const row = tbody.insertRow()
             row.innerHTML = `
             <td> ${session.value} </td> <td> ${password.value} </td>
@@ -36,5 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
             createTable();
         }
     })
-
 })
