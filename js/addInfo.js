@@ -11,11 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //  Add the information
     addBtn.addEventListener('click', () => {
+        // Table
+        function createTable() {
+            const tbody = table.getElementsByTagName('tbody')[0]  // Put a 0 to select the tbody element and not the object
+            const row = tbody.insertRow()
+            row.innerHTML = `
+            <td> ${session.value} </td> <td> ${password.value} </td>
+            `
+            return 1
+        }
         // Errors
         if ( session.value == '' || password.value == '' ) {
             error.style.display = 'inline'
-        } else {
+        }   else {
             error.style.display = 'none'
+            createTable();
         }
     })
 
