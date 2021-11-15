@@ -11,14 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //  Add the information
     addBtn.addEventListener('click', () => {
-        // Table
+        // Function to create the table
         function createTable() {
             const tbody = table.getElementsByTagName('tbody')[0]  // Put a 0 to select the tbody element and not the object
             const row = tbody.insertRow()
             row.innerHTML = `
             <td> ${session.value} </td> <td> ${password.value} </td>
+            <td class="btnTd">
+                <button class="button" id="editBtn">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+
+                <button class="button" id="removeBtn">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </td>
             `
-            return 1
         }
         // Errors
         if ( session.value == '' || password.value == '' ) {
