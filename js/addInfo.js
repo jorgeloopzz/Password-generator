@@ -17,16 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const row = tbody.insertRow()
             row.innerHTML = `
             <td> ${session.value} </td> <td> ${password.value} </td>
-            <td class="btnTd">
+            <td class='btnTd'>
                 <button class="button" id="editBtn">
                     <i class="fas fa-pencil-alt"></i>
                 </button>
-
-                <button class="button" id="removeBtn">
-                    <i class="fas fa-trash"></i>
-                </button>
             </td>
             `
+            const removeBtn = document.createElement('button');
+            removeBtn.classList.add('button');
+            removeBtn.setAttribute('id', 'removeBtn');
+            removeBtn.innerHTML = '<i class="fas fa-trash"></i>';
+            row.children[2].appendChild(removeBtn);
         }
         // Errors
         if ( session.value == '' || password.value == '' ) {
