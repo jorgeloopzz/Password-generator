@@ -54,7 +54,8 @@ h3 {
     color: #e00000;
     font-family: 'Zen Kaku Gothic Antique';
     font-style: oblique;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 
 

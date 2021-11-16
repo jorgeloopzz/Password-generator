@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // Errors
         if ( session.value == '' || password.value == '' ) {
-            error.style.display = 'inline'
+            error.style.visibility = 'visible'
         }   else {
-            error.style.display = 'none'
+            error.style.visibility = 'hidden'
             createTable();
         }
     })
