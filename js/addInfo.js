@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inputs information
     const session = document.getElementById('sessionInput');    // Session
     const password = document.getElementById('pwdInput'); // Password
-    // Error messag
+    // Error message
     const error = document.querySelector('h3');
     // Table
     const table = document.getElementById('table');
