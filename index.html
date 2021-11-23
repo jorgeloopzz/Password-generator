@@ -1,80 +1,76 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "shortcut icon" type = "image/png" href = "img/padlock.png">  <!-- Favicon -->
-    <script src = "https://kit.fontawesome.com/cd7a3a8748.js" crossorigin = "anonymous"></script>   <!-- Icons -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/padlock.png" />
+    <!-- Favicon -->
+    <script
+      src="https://kit.fontawesome.com/cd7a3a8748.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icons -->
     <title>Password Manager</title>
     <!-- CSS code -->
-    <link rel = "stylesheet" href = "style/style.css"> 
-    <link rel = "stylesheet" href = "style/responsive.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
     <!-- JS code -->
-    <script src = "js/generatePwd.js"></script>
-    <script src = "js/addInfo.js"></script>
-    <script src = "js/localStorage.js"></script>
-</head>
+    <script src="js/generatePwd.js"></script>
+    <script src="js/addInfo.js"></script>
+    <script src="js/localStorage.js"></script>
+  </head>
 
-<body>
+  <body>
     <main>
+      <header>
+        <h1>Password Manager</h1>
+      </header>
 
-        <header>
-            <h1>
-                Password Manager
-            </h1>
-        </header>
-        
-        <div id="downHeader">
-            
-            <button id="generatePwd" class="button">
-                Generate Password
-            </button>
+      <div id="downHeader">
+        <button id="generatePwd" class="button">Generate Password</button>
 
-            <!-- Inputs -->
-            <div id="inputs">
-                <!-- Session input -->
-                <input
-                type="text"
-                id="sessionInput"
-                placeholder="Session: Github"
-                autocomplete="off"
-                >
-                
-                <!-- Password input -->
-                <input
-                type="text"
-                id="pwdInput"
-                placeholder="Password: Uterino123"
-                autocomplete="off"
-                >
+        <!-- Inputs -->
+        <div id="inputs">
+          <!-- Session input -->
+          <input
+            type="text"
+            id="sessionInput"
+            placeholder="Session: Github"
+            autocomplete="off"
+          />
 
-                <button class="button" id="addBtn"> Add </button>
-            </div>
+          <!-- Password input -->
+          <input
+            type="text"
+            id="pwdInput"
+            placeholder="Password: Uterino123"
+            autocomplete="off"
+          />
 
-            <!-- Errors -->
-            <div>
-                <h3>
-                    <i class="fas fa-exclamation-circle"></i>
-                    Password and session are required
-                </h3>
-            </div>
-          
+          <button class="button" id="addBtn">Add</button>
         </div>
-       
-        <!-- Passwords table -->
-        <table style="width: 100%;" id="table">
-            <thead>
-                <tr>
-                    <th> Session </th>
-                    <th> Password </th>
-                </tr>
-            </thead>
 
-            <tbody></tbody>
-        </table>
+        <!-- Errors -->
+        <div>
+          <h3>
+            <i class="fas fa-exclamation-circle"></i>
+            Password and session are required
+          </h3>
+        </div>
+      </div>
 
+      <!-- Passwords table -->
+      <table style="width: 100%" id="table">
+        <thead>
+          <tr>
+            <th>Session</th>
+            <th>Password</th>
+          </tr>
+        </thead>
 
+        <tbody></tbody>
+      </table>
     </main>
-</body>
+  </body>
 </html>

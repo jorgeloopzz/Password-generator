@@ -1,111 +1,110 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');   /* Ceviche One */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');   /* Zen Kaku Gothic Antique */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');  /* Libre Baskerville */
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap"); /* Ceviche One */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap"); /* Zen Kaku Gothic Antique */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"); /* Libre Baskerville */
 
 body {
-    margin: 0;
-    background-color: #222222;
+  margin: 0;
+  background-color: #222222;
 }
 
 main {
-    margin: 0 5%;
+  margin: 0 5%;
 }
 
 /* Title */
 h1 {
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Ceviche One', cursive;
-    font-size: 4em;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Ceviche One", cursive;
+  font-size: 4em;
 }
-
 
 /* Buttons style */
 #downHeader {
-    margin-top: 2em; /* Make a space between header and #downheader */
-    /* Center the items */
-    display: grid;
-    place-items: center;
+  margin-top: 2em; /* Make a space between header and #downheader */
+  /* Center the items */
+  display: grid;
+  place-items: center;
 }
 
 .button {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.7em;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.7em;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
 }
 
 /* Generate password button */
 #generatePwd {
-    background-color: #2fa800;
+  background-color: #2fa800;
 }
 
 #generatePwd:active {
-    background-color: #42e601;
+  background-color: #42e601;
 }
-
 
 /* Error style */
 h3 {
-    color: #e00000;
-    font-family: 'Zen Kaku Gothic Antique';
-    font-style: oblique;
-    /* display: none; */
-    visibility: hidden;
+  color: #e00000;
+  font-family: "Zen Kaku Gothic Antique";
+  font-style: oblique;
+  visibility: hidden;
 }
-
 
 /* Inputs */
 #inputs {
-    margin: 2em 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 0.5fr;
+  margin: 2em 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 0.5fr;
 }
 
 input {
-    font-size: 1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 1em;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 1em;
 }
 
 /* Add and edit button */
-#addBtn, #editBtn {
-    background-color: #025bce;
+#addBtn,
+#editBtn {
+  background-color: #025bce;
 }
 
-#addBtn:active, #editBtn:active {
-    background-color: #2382ff;
+#addBtn:active,
+#editBtn:active {
+  background-color: #2382ff;
 }
-
 
 /* Password table */
-table, td {
-    color: #ffffff;
-    text-align: center;
-    border-top: solid #ffffff 1px;
-    margin-top: 2em;
+table,
+td {
+  color: #ffffff;
+  text-align: center;
+  border-top: solid #ffffff 1px;
+  margin-top: 2em;
 }
 
-th, td {
-    padding: 1em 0; 
+th,
+td {
+  padding: 1em 0;
 }
 
 /* Buttons td */
 .btnTd {
-    width: 10%;
+  width: 10%;
 }
 
 #removeBtn {
-    background-color: #ff0d0d;
+  background-color: #ff0d0d;
 }
 
 #removeBtn:active {
-    background-color: #af0000;
+  background-color: #af0000;
 }
