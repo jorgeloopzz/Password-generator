@@ -1,8 +1,7 @@
 //  File to add the information on the input
 document.addEventListener("DOMContentLoaded", () => {
   const copyBtn = document.getElementById("copyBtn"); // Add button
-  // Inputs information
-  const session = document.getElementById("sessionInput"); // Session
+  // Input information
   const password = document.getElementById("pwdInput"); // Password
   // Error message
   const error = document.querySelector("h3");
