@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //  Add the information
   copyBtn.addEventListener("click", () => {
     // Errors
-    if (session.value == "" || password.value == "") {
+    if (password.value == "") {
       error.style.visibility = "visible";
     } else {
       error.style.visibility = "hidden";
