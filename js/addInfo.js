@@ -1,6 +1,6 @@
 //  File to add the information on the input
 document.addEventListener("DOMContentLoaded", () => {
-  const copyBtn = document.getElementById("copyBtn"); // Add button
+  const copyBtn = document.getElementById("copyBtn"); // Copy button
   // Input information
   const password = document.getElementById("pwdInput"); // Password
   // Error message
@@ -9,9 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const table = document.getElementById("table");
   let id = 0;
 
-  //  Add the information
+  //  Copy the password
   copyBtn.addEventListener("click", () => {
-    // Errors
+    /* Select the text field */
+    password.select();
+    password.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(password.value);
+
+    // Error
     if (password.value == "") {
       error.style.visibility = "visible";
     } else {
