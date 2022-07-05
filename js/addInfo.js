@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
       error.style.visibility = "visible";
     } else {
       error.style.visibility = "hidden";
-      createTable();
     }
   });
 });
