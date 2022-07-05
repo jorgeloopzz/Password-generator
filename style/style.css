@@ -82,29 +82,3 @@ input {
   background-color: #2382ff;
 }
 
-/* Password table */
-table,
-td {
-  color: #ffffff;
-  text-align: center;
-  border-top: solid #ffffff 1px;
-  margin-top: 2em;
-}
-
-th,
-td {
-  padding: 1em 0;
-}
-
-/* Buttons td */
-.btnTd {
-  width: 10%;
-}
-
-#removeBtn {
-  background-color: #ff0d0d;
-}
-
-#removeBtn:active {
-  background-color: #af0000;
-}
