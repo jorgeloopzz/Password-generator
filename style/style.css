@@ -72,10 +72,10 @@ input {
 }
 
 /* Copy button */
-#addBtn {
+#copyBtn {
   background-color: #025bce;
 }
 
-#addBtn:active {
+#copyBtn:active {
   background-color: #2382ff;
 }

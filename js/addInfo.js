@@ -1,6 +1,6 @@
 //  File to add the information on the input
 document.addEventListener("DOMContentLoaded", () => {
-  const addBtn = document.getElementById("addBtn"); // Add button
+  const copyBtn = document.getElementById("copyBtn"); // Add button
   // Inputs information
   const session = document.getElementById("sessionInput"); // Session
   const password = document.getElementById("pwdInput"); // Password
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let id = 0;
 
   //  Add the information
-  addBtn.addEventListener("click", () => {
+  copyBtn.addEventListener("click", () => {
     // Function to remove the table
     function removeTable(id) {
       document.getElementById(id).remove();
