@@ -71,14 +71,11 @@ input {
   margin-left: 1em;
 }
 
-/* Add and edit button */
-#addBtn,
-#editBtn {
+/* Copy button */
+#addBtn {
   background-color: #025bce;
 }
 
-#addBtn:active,
-#editBtn:active {
+#addBtn:active {
   background-color: #2382ff;
 }
-
