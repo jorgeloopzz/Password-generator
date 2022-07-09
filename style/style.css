@@ -71,6 +71,20 @@ input {
   margin-left: 1em;
 }
 
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  /* Put in blocks */
+  #inputs {
+    display: block;
+    margin-top: 2em;
+  }
+
+  /* Make space between items */
+  input {
+    margin: 1em 0;
+  }
+}
+
 /* Copy button */
 #copyBtn {
   background-color: #025bce;
