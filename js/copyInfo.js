@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //  Copy the password
   copyBtn.addEventListener("click", () => {
-    /* Select the text field */
+    // Select the text field
     password.select();
-    password.setSelectionRange(0, 99999); /* For mobile devices */
+    password.setSelectionRange(0, 99999); // For mobile devices
 
-    /* Copy the text inside the text field */
+    // Copy the text inside the text field
     navigator.clipboard.writeText(password.value);
 
     // Error
