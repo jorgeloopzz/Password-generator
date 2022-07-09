@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
       error.style.visibility = "visible";
     } else {
       error.style.visibility = "hidden";
+
+      // Change button text
+      copyBtn.innerHTML = "Copied!";
+      // Return button text to "Copy"
+      setTimeout(() => {
+        copyBtn.innerHTML = "Copy";
+      }, 2000);
     }
   });
 });
