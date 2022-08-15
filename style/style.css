@@ -92,3 +92,10 @@ input {
 #copyBtn:active {
   background-color: #2382ff;
 }
+
+/* Checkboxes */
+#checkboxes {
+  margin-top: 2em;
+  font-family: "Zen Kaku Gothic Antique";
+  color: #ffffff;
+}
