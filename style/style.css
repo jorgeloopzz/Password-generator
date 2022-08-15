@@ -47,6 +47,10 @@ h1 {
 }
 
 /* Error style */
+#errors {
+  display: grid;
+}
+
 h3 {
   color: #e00000;
   font-family: "Zen Kaku Gothic Antique";
