@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //  Function to generate the password
   function generatePassword(array) {
     for (let i = 0; i < 20; i++) {
-      let letter = Math.floor(Math.random() * characters.length);
-      pwdField.value += array[letter];
+      let character = Math.floor(Math.random() * characters.length);
+      pwdField.value += array[character];
     }
     return pwdField;
   }
