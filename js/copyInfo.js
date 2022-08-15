@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Error
     if (password.value == "") {
-      error.style.visibility = "visible";
+      error.style.display = "inline";
     } else {
-      error.style.visibility = "hidden";
+      error.style.display = "none";
 
       // Change button text
       copyBtn.innerHTML = "Copied!";

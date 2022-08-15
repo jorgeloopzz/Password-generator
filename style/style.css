@@ -52,7 +52,7 @@ h3 {
   color: #e00000;
   font-family: "Zen Kaku Gothic Antique";
   font-style: oblique;
-  visibility: hidden;
+  display: none;
 }
 
 /* Inputs */
