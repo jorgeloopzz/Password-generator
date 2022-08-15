@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Input information
   const password = document.getElementById("pwdInput"); // Password
   // Error message
-  const error = document.querySelector("h3");
+  const error = document.getElementById("error1");
 
   //  Copy the password
   copyBtn.addEventListener("click", () => {
