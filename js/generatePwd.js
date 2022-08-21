@@ -8,6 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
   //  Characters to put in the password
   const characters = "abcdefghijklmñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTU0123456789$#~%&/()?¿"
 
+  // Lowercase
+  const lowercases = "abcdefghijklmnñopqrstuvxyz"
+
+  // Uppercase
+  const uppercases = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ"
+
+  // Number
+  const numbers = "123456789"
+
+  // Simbol
+  const simbols = "#~·$%&¬/()=?¿*!''"
+
+
   //  Function to generate the password
   function generatePassword(array) {
     for (let i = 0; i < 20; i++) {
