@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const simbols = "#~·$%&¬/()=?¿*!''";
 
   // Add characters in string depending on checkboxes
+
+  // Add uppercases
   if (checkboxes[0].checked != true) {
     checkboxes[0].addEventListener("click", () => {
       if (checkboxes[0].checked == true) {
@@ -31,6 +33,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   } else {
     characters += uppercases;
+  }
+
+  // Add lowercases
+  if (checkboxes[1].checked != true) {
+    checkboxes[1].addEventListener("click", () => {
+      if (checkboxes[1].checked == true) {
+        characters += lowercases;
+      } else {
+        characters = characters.replace(/[a-z]/g, "");
+      }
+    });
+  } else {
+    characters += lowercases;
+  }
+
+  // Add numbers
+  if (checkboxes[2].checked != true) {
+    checkboxes[2].addEventListener("click", () => {
+      if (checkboxes[2].checked == true) {
+        characters += numbers;
+      } else {
+        characters = characters.replace(/[0-9]/g, "");
+      }
+    });
+  } else {
+    characters += numbers;
+  }
+
+  // Add simbols
+  if (checkboxes[3].checked != true) {
+    checkboxes[3].addEventListener("click", () => {
+      if (checkboxes[3].checked == true) {
+        characters += simbols;
+      } else {
+        characters = characters.replace(/[^a-zA-Z ]/g, "");
+      }
+    });
+  } else {
+    characters += simbols;
   }
 
   //  Function to generate the password
