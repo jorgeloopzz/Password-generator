@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let characters = "";
 
   // Lowercase
-  const lowercases = "abcdefghijklmnñopqrstuvxyz";
+  const lowercases = "abcdefghijklmnopqrstuvxyz";
 
   // Uppercase
-  const uppercases = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ";
+  const uppercases = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
 
   // Number
   const numbers = "123456789";
