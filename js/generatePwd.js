@@ -6,20 +6,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const boxError = document.getElementById("error2"); // Error message
 
   //  Characters to put in the password
-  const characters = "abcdefghijklmñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTU0123456789$#~%&/()?¿"
+  let characters = "";
 
   // Lowercase
-  const lowercases = "abcdefghijklmnñopqrstuvxyz"
+  const lowercases = "abcdefghijklmnñopqrstuvxyz";
 
   // Uppercase
-  const uppercases = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ"
+  const uppercases = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ";
 
   // Number
-  const numbers = "123456789"
+  const numbers = "123456789";
 
   // Simbol
-  const simbols = "#~·$%&¬/()=?¿*!''"
+  const simbols = "#~·$%&¬/()=?¿*!''";
 
+  // Add characters in string depending on checkboxes
+  if (checkboxes[0].checked != true) {
+    checkboxes[0].addEventListener("click", () => {
+      if (checkboxes[0].checked == true) {
+        characters += uppercases;
+      } else {
+        characters = characters.replace(/[^a-z]/g, "");
+      }
+    });
+  } else {
+    characters += uppercases;
+  }
 
   //  Function to generate the password
   function generatePassword(array) {
