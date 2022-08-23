@@ -32,6 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   } else {
+    checkboxes[0].addEventListener("click", () => {
+      if (checkboxes[0].checked != true) {
+        characters = characters.replace(/[^a-z]/g, "");
+      } else {
+        characters += uppercases;
+      }
+    });
     characters += uppercases;
   }
 
@@ -45,6 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   } else {
+    checkboxes[1].addEventListener("click", () => {
+      if (checkboxes[1].checked != true) {
+        characters = characters.replace(/[a-z]/g, "");
+      } else {
+        characters += lowercases;
+      }
+    });
     characters += lowercases;
   }
 
@@ -58,6 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   } else {
+    checkboxes[2].addEventListener("click", () => {
+      if (checkboxes[2].checked != true) {
+        characters = characters.replace(/[0-9]/g, "");
+      } else {
+        characters += numbers;
+      }
+    });
     characters += numbers;
   }
 
@@ -71,6 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   } else {
+    checkboxes[3].addEventListener("click", () => {
+      if (checkboxes[3].checked != true) {
+        characters = characters.replace(/[^a-zA-Z ]/g, "");
+      } else {
+        characters += simbols;
+      }
+    });
     characters += simbols;
   }
 
