@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (checkboxes[0].checked == true) {
         characters += uppercases;
       } else {
-        characters = characters.replace(/[^a-z]/g, "");
+        characters = characters.replace(/[A-Z]/g, "");
       }
     });
   } else {
     checkboxes[0].addEventListener("click", () => {
       if (checkboxes[0].checked != true) {
-        characters = characters.replace(/[^a-z]/g, "");
+        characters = characters.replace(/[A-Z]/g, "");
       } else {
         characters += uppercases;
       }
