@@ -113,8 +113,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //  Generate password when click
   generateBtn.addEventListener("click", () => {
-    if (pwdField.value == "") {
-      generatePassword(characters);
+    if (characters.length == 0) {
+      // Avoid undefined output
+      pwdField.value = "";
     } else {
       pwdField.value = "";
       generatePassword(characters);
