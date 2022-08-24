@@ -28,9 +28,9 @@ h1 {
 }
 
 .button {
-  font-family: "Libre Baskerville", serif;
-  font-size: 1.7em;
-  padding: 5px 10px;
+  font-family: "Libre Baskerville";
+  font-size: 2em;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
