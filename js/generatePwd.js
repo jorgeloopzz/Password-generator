@@ -88,13 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (checkboxes[3].checked == true) {
         characters += simbols;
       } else {
-        characters = characters.replace(/[^a-zA-Z ]/g, "");
+        characters = characters.replace(/[^A-Za-z0-9]/g, "");
       }
     });
   } else {
     checkboxes[3].addEventListener("click", () => {
       if (checkboxes[3].checked != true) {
-        characters = characters.replace(/[^a-zA-Z ]/g, "");
+        characters = characters.replace(/[^A-Za-z0-9]/g, "");
       } else {
         characters += simbols;
       }
