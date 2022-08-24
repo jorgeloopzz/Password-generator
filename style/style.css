@@ -30,7 +30,7 @@ h1 {
 .button {
   font-family: "Libre Baskerville";
   font-size: 2em;
-  padding: 5px 15px;
+  padding: 1px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -60,10 +60,9 @@ h3 {
 
 /* Inputs */
 #inputs {
-  margin: 2em 0;
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
 }
 
 input {
@@ -71,7 +70,6 @@ input {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  margin-left: 1em;
 }
 
 /* Responsive */
