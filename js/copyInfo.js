@@ -22,10 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
       error.style.display = "none";
 
       // Change button text
-      copyBtn.innerHTML = "Copied!";
+      copyBtn.innerHTML =
+        "<span class='material-symbols-outlined'> done </span>";
       // Return button text to "Copy"
       setTimeout(() => {
-        copyBtn.innerHTML = "Copy";
+        copyBtn.innerHTML =
+          "<span class='material-symbols-outlined'> content_copy </span>";
       }, 2000);
     }
   });
