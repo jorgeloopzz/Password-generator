@@ -9,4 +9,4 @@
 </div>
 
 - A simple password generator for your accounts made with Javascript.
-  - To use it, download the zip, extract it and open the `index.html` in your browser or copy [this](https://jorgeloopzz.github.io/Password-generator) link and bookmark it.
+  - Copy [this](https://jorgeloopzz.github.io/Password-generator) link and bookmark it.
