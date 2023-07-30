@@ -84,7 +84,14 @@ input {
   input {
     margin: 1em 0;
   }
-}
+
+  #checkboxes {
+    font-size: 0.8em;
+  }
+
+  .button {
+    padding: 1px 5px;
+  }
 
 /* Copy button */
 #copyBtn {
