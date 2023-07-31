@@ -73,17 +73,12 @@ input {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 460px) {
   /* Put in blocks */
   #inputs {
-    display: block;
-    margin-top: 2em;
+    display: inline-flex;
   }
 
-  /* Make space between items */
-  input {
-    margin: 1em 0;
-  }
 
   #checkboxes {
     font-size: 0.8em;
