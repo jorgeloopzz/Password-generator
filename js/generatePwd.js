@@ -21,86 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const simbols = "#~·$%&¬/()=?¿*!''";
 
   // Add characters in string depending on checkboxes
+  const characterSets = [
+    { set: uppercases, regex: /[A-Z]/g },
+    { set: lowercases, regex: /[a-z]/g },
+    { set: numbers, regex: /[0-9]/g },
+    { set: simbols, regex: /[^A-Za-z0-9]/g },
+  ];
 
-  // Add uppercases
-  if (checkboxes[0].checked != true) {
-    checkboxes[0].addEventListener("click", () => {
-      if (checkboxes[0].checked == true) {
-        characters += uppercases;
+  checkboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener("click", () => {
+      if (checkbox.checked) {
+        characters += characterSets[index].set;
       } else {
-        characters = characters.replace(/[A-Z]/g, "");
+        characters = characters.replace(characterSets[index].regex, "");
       }
     });
-  } else {
-    checkboxes[0].addEventListener("click", () => {
-      if (checkboxes[0].checked != true) {
-        characters = characters.replace(/[A-Z]/g, "");
-      } else {
-        characters += uppercases;
-      }
-    });
-    characters += uppercases;
-  }
 
-  // Add lowercases
-  if (checkboxes[1].checked != true) {
-    checkboxes[1].addEventListener("click", () => {
-      if (checkboxes[1].checked == true) {
-        characters += lowercases;
-      } else {
-        characters = characters.replace(/[a-z]/g, "");
-      }
-    });
-  } else {
-    checkboxes[1].addEventListener("click", () => {
-      if (checkboxes[1].checked != true) {
-        characters = characters.replace(/[a-z]/g, "");
-      } else {
-        characters += lowercases;
-      }
-    });
-    characters += lowercases;
-  }
-
-  // Add numbers
-  if (checkboxes[2].checked != true) {
-    checkboxes[2].addEventListener("click", () => {
-      if (checkboxes[2].checked == true) {
-        characters += numbers;
-      } else {
-        characters = characters.replace(/[0-9]/g, "");
-      }
-    });
-  } else {
-    checkboxes[2].addEventListener("click", () => {
-      if (checkboxes[2].checked != true) {
-        characters = characters.replace(/[0-9]/g, "");
-      } else {
-        characters += numbers;
-      }
-    });
-    characters += numbers;
-  }
-
-  // Add simbols
-  if (checkboxes[3].checked != true) {
-    checkboxes[3].addEventListener("click", () => {
-      if (checkboxes[3].checked == true) {
-        characters += simbols;
-      } else {
-        characters = characters.replace(/[^A-Za-z0-9]/g, "");
-      }
-    });
-  } else {
-    checkboxes[3].addEventListener("click", () => {
-      if (checkboxes[3].checked != true) {
-        characters = characters.replace(/[^A-Za-z0-9]/g, "");
-      } else {
-        characters += simbols;
-      }
-    });
-    characters += simbols;
-  }
+    if (checkbox.checked) {
+      characters += characterSets[index].set;
+    }
+  });
 
   //  Function to generate the password
   function generatePassword(array) {
