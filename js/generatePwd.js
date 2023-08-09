@@ -51,6 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return pwdField;
   }
 
+  // Function to display error messages
+  function updateErrorVisibility() {
+    const anyCheckboxChecked = Array.from(checkboxes).some(
+      (checkbox) => checkbox.checked
+    );
+    boxError.style.display = anyCheckboxChecked ? "none" : "inline";
+  }
+
   //  Generate password when click
   generateBtn.addEventListener("click", () => {
     if (characters.length == 0) {
@@ -62,15 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Error message
-    if (
-      checkboxes[0].checked == true ||
-      checkboxes[1].checked == true ||
-      checkboxes[2].checked == true ||
-      checkboxes[3].checked == true
-    ) {
-      boxError.style.display = "none";
-    } else {
-      boxError.style.display = "inline";
-    }
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("click", updateErrorVisibility);
+    });
+
+    updateErrorVisibility();
   });
 });
