@@ -4,12 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"); /* Libre Baskerville */
 
 body {
-  margin: 0;
   background-color: #222222;
-}
-
-main {
-  margin: 0 5%;
 }
 
 /* Title */
@@ -82,6 +77,7 @@ label {
   padding-right: 5px;
   cursor: pointer;
   user-select: none;
+  font-family: "Libre Baskerville";
 }
 
 label input {
@@ -95,7 +91,6 @@ label input {
 
 .checkmark {
   position: absolute;
-  top: 0;
   left: 0;
   height: 25px;
   width: 25px;
@@ -109,7 +104,7 @@ label:hover input ~ .checkmark {
 
 /* When the checkbox is checked, add a blue background */
 label input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -143,7 +138,6 @@ label .checkmark:after {
   #inputs {
     display: inline-flex;
   }
-
 
   #checkboxes {
     font-size: 0.8em;
