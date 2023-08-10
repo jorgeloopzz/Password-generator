@@ -58,14 +58,14 @@ h3 {
 #inputs {
   display: grid;
   place-items: center;
-  grid-template-columns: 0.3fr 1fr 0.3fr;
+  grid-template-columns: 0.4fr 1fr 0.4fr;
 }
 
 input {
-  font-size: 1em;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  font-family: "Zen Kaku Gothic Antique";
 }
 
 /* Custom checkboxes */
