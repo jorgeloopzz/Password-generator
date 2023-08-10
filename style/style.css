@@ -5,6 +5,7 @@
 
 body {
   background-color: #222222;
+  margin: 0;
 }
 
 /* Title */
@@ -145,6 +146,21 @@ label .checkmark:after {
 
   .button {
     padding: 1px 5px;
+  }
+
+  .checkmark {
+    height: 19px;
+    width: 19px;
+  }
+
+  label {
+    padding-left: 26px;
+    padding-right: 6px;
+  }
+
+  label .checkmark::after {
+    left: 6px;
+    top: 1px;
   }
 }
 
