@@ -3,17 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap"); /* Zen Kaku Gothic Antique */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"); /* Libre Baskerville */
 
-body {
-  background-color: #222222;
-  margin: 0;
-}
 
 /* Title */
 h1 {
-  text-align: center;
-  color: #ffffff;
   font-family: "Ceviche One", cursive;
-  font-size: 4em;
 }
 
 /* Buttons style */
