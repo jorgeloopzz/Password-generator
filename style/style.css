@@ -10,29 +10,11 @@ h1 {
 }
 
 /* Buttons style */
-#downHeader {
-  /* Center the items */
-  display: grid;
-  place-items: center;
-}
 
 .button {
   font-family: "Libre Baskerville";
   font-size: 2em;
   padding: 1px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-/* Generate password button */
-#generatePwd {
-  background-color: #2fa800;
-}
-
-#generatePwd:active {
-  background-color: #42e601;
 }
 
 /* Error style */
@@ -155,15 +137,6 @@ label .checkmark:after {
     left: 6px;
     top: 1px;
   }
-}
-
-/* Copy button */
-#copyBtn {
-  background-color: #025bce;
-}
-
-#copyBtn:active {
-  background-color: #2382ff;
 }
 
 /* Checkboxes */

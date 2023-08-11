@@ -35,10 +35,10 @@
         <h1 class="display-1 text-center text-light p-4">Password Generator</h1>
       </header>
 
-      <div id="downHeader">
+      <div id="downHeader" class="d-block container px-4">
         <!-- Inputs -->
-        <div id="inputs">
-          <button id="generatePwd" class="button">
+        <div id="inputs" class="row gx-5">
+          <button id="generatePwd" class="button btn btn-success">
             <span class="material-symbols-outlined"> add </span>
           </button>
 
@@ -48,9 +48,10 @@
             id="pwdInput"
             placeholder="Example: Uterino123"
             autocomplete="off"
+            
           />
 
-          <button class="button" id="copyBtn">
+          <button class="button btn btn-primary" id="copyBtn">
             <span class="material-symbols-outlined"> content_copy </span>
           </button>
         </div>
