@@ -13,8 +13,6 @@ h1 {
 
 .button {
   font-family: "Libre Baskerville";
-  font-size: 2em;
-  padding: 1px 15px;
 }
 
 /* Error style */
@@ -28,13 +26,6 @@ h3 {
   font-family: "Zen Kaku Gothic Antique";
   font-style: oblique;
   display: none;
-}
-
-/* Inputs */
-#inputs {
-  display: grid;
-  place-items: center;
-  grid-template-columns: 0.4fr 1fr 0.4fr;
 }
 
 input {
@@ -106,37 +97,6 @@ label .checkmark:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-/* Responsive */
-@media only screen and (max-width: 460px) {
-  /* Put in blocks */
-  #inputs {
-    display: inline-flex;
-  }
-
-  #checkboxes {
-    font-size: 0.8em;
-  }
-
-  .button {
-    padding: 1px 5px;
-  }
-
-  .checkmark {
-    height: 19px;
-    width: 19px;
-  }
-
-  label {
-    padding-left: 26px;
-    padding-right: 6px;
-  }
-
-  label .checkmark::after {
-    left: 6px;
-    top: 1px;
-  }
 }
 
 /* Checkboxes */
