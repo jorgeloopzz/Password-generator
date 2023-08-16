@@ -2,5 +2,5 @@
   🔑 Password generator
 </h1>
 
-- A simple password generator for your accounts made with Javascript.
+- A simple password generator for your accounts made with Javascript and Bootstrap.
   - Copy [this](https://jorgeloopzz.github.io/Password-generator) link and bookmark it.
