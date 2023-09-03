@@ -8,18 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //  Copy the password
   copyBtn.addEventListener("click", () => {
-    // Select the text field
-    password.select();
-    password.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(password.value);
-
     // Error
     if (password.value == "") {
       error.style.display = "inline";
     } else {
       error.style.display = "none";
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(password.value);
 
       // Change button text
       copyBtn.innerHTML =
