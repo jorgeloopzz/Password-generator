@@ -42,7 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //  Function to generate the password
+  /**
+  * Function to generate random password
+  * @param {string} array - Chain of characters depending of what user has chosen
+  * @returns {string} The field where password is set with the password generated
+  */
   function generatePassword(array) {
     for (let i = 0; i < 20; i++) {
       let character = Math.floor(Math.random() * characters.length);
